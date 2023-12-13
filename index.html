@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Site</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class = "inceput">   <!--prima pagina-->
+        <div class="title">Afla cu ce partid politic te potrivesti</div>
+        <p>Completeaza acest test online pentru a afla ce partid te reprezinta cel mai mult.</p>
+        <button class="startButton">Incepe</button>
+        <button class="endButton">Sfarsit</button>
+    </div>
+
+    <div class="quiz-container">  <!--paginile de intrebari-->
+        <div class="title">Titlu</div>
+        <div id="question" class="question"></div>
+        <label class="option">
+            <input type="radio" name="option" value="1" />
+            <span class="option1"></span>
+        </label>
+        <label class="option">
+            <input type="radio" name="option" value="2" />
+            <span class="option2"></span>
+        </label>
+        <label class="option">
+            <input type="radio" name="option" value="3" />
+            <span class="option3"></span>
+        </label>
+        <label class="option">
+            <input type="radio" name="option" value="4" />
+            <span class="option4"></span>
+        </label>
+        <div class="controls">
+            <button class="next">Inainte</button>
+        </div>
+    </div>
+
+    <div class="result"> 
+
+    </div>
+
+    <script src=questions.js></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
