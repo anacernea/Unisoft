@@ -1,10 +1,10 @@
 
 
-const maxPsd = 3;
-const maxAur = 3;
-const maxPnl = 3;
+const maxPsd = 4;
+const maxAur = 4;
+const maxPnl = 4;
 const maxUsr = 4;
-const maxUdmr = 3;
+const maxUdmr = 4;
 
 var dict = {};
 
@@ -24,7 +24,6 @@ const option4 = document.querySelector('.option4');
 const nextButton = document.querySelector('.next');
 const endButton = document.querySelector('.endButton');
 const startButton = document.querySelector('.startButton');
-const restartButton = document.querySelector('.restart');
 const result = document.querySelector('.result');
 
 //Function to generate question 
@@ -172,17 +171,40 @@ function loadEndMenu(){
     result.style.display = 'flex';
     result.innerHTML =
         `
-        <div class="summary">
-        <h1 class="final-score">Rezultat</h1>
-        <p>${partid[0]}</p>
-        <p>${partid[1]}</p>
-        <p>${partid[2]}</p>
-        <p>${partid[3]}</p>
-        <p>${partid[4]}</p>
-    </div>
-    <button class="restart">Restart</button>
-    <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+        <div class="resultrow">
+            <div class="partid1">
+                <h3>PSD</h3>
+                <p style="font-size:20px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="butonpartid1">Descopera mai multe</button>
+            </div>
+            <div>
+                <canvas id="myChart" style="width:100%;"></canvas>
+                <button class="restart">Restart</button>
+            </div>
+            <div class="partid2">
+                <h3>PNL</h3>
+                <p style="font-size:20px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="butonpartid2">Descopera mai multe</button>
+            </div>
+            <div class="partid3">
+                <h3>USR</h3>
+                <p style="font-size:20px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="butonpartid3">Descopera mai multe</button>
+            </div>
+            <div class="partid4">
+                <h3>AUR</h3>
+                <p style="font-size:20px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="butonpartid4">Descopera mai multe</button>
+            </div>
+            <div class="partid5">
+                <h3>UDMR</h3>
+                <p style="font-size:20px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="butonpartid5">Descopera mai multe</button>
+            </div>
+        </div>
         `;
+    const restartButton = document.querySelector('.restart');
+    restartButton.addEventListener('click',restartQuiz);
     makeGraph(numePartideSortat, valoriPartideSortat, culoriPartideSortat);
 }
 
@@ -229,11 +251,11 @@ function makeGraph(numePartideSortat, valoriPartideSortat, culoriPartideSortat){
     });
 }
 
+//startMenu.style.display = 'none';
 result.style.display = 'none';
 container.style.display = 'none';
 generateQuestions(currentQuestion);
 nextButton.addEventListener('click', loadNextQuestion);
 endButton.addEventListener('click', loadEndMenu);
-result.addEventListener('click',restartQuiz);
 startButton.addEventListener('click', startQuiz);
 
