@@ -1,4 +1,20 @@
+var descPartideScurte = {};
+descPartideScurte["PSD"] = "PSD Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+descPartideScurte["PNL"] = "PNL Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+descPartideScurte["USR"] = "USR Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+descPartideScurte["UDMR"] = "UDMR Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+descPartideScurte["AUR"] = "AUR Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 
+var descPartideLungi = {};
+descPartideLungi["PSD"] = "PSD Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+descPartideLungi["PNL"] = "PNL Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+descPartideLungi["USR"] = "USR Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+descPartideLungi["UDMR"] = "UDMR Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+descPartideLungi["AUR"] = "AUR Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+
+
+var partidSelectat = 0;
+var items;
 
 const maxPsd = 4;
 const maxAur = 4;
@@ -25,6 +41,7 @@ const nextButton = document.querySelector('.next');
 const endButton = document.querySelector('.endButton');
 const startButton = document.querySelector('.startButton');
 const result = document.querySelector('.result');
+const moreInfo = document.querySelector('.moreInfo');
 
 //Function to generate question 
 function generateQuestions (index) {
@@ -60,7 +77,7 @@ function loadNextQuestion () {
     ////Add the answer score to the score array
     score.push(answerScore);
 
-    selectedAnswersData.push()
+    selectedAnswersData.push(selectedOption.nextElementSibling.innerHTML);
     
 
     //const totalScore = score.reduce((total, currentNum) => total + currentNum);
@@ -128,10 +145,10 @@ function loadEndMenu(){
     console.log("USR: " + usr);
     console.log("PNL: " + pnl);
 
-    dict["PSD"]=(100*psd/maxPsd).toFixed(2);
-    dict["PNL"]=(100*pnl/maxPnl).toFixed(2);
-    dict["AUR"]=(100*aur/maxAur).toFixed(2);
     dict["USR"]=(100*usr/maxUsr).toFixed(2);
+    dict["PNL"]=(100*pnl/maxPnl).toFixed(2);
+    dict["PSD"]=(100*psd/maxPsd).toFixed(2);
+    dict["AUR"]=(100*aur/maxAur).toFixed(2);
     dict["UDMR"]=(100*udmr/maxUdmr).toFixed(2);
 
     culoarePartid={};
@@ -141,7 +158,7 @@ function loadEndMenu(){
     culoarePartid["UDMR"]='rgba(21, 128, 60, 1)';
     culoarePartid["AUR"]='rgba(252, 194, 36, 1)';
 
-    var items = Object.keys(dict).map(function(key){
+    items = Object.keys(dict).map(function(key){
         return [key, dict[key], culoarePartid[key]];
     });
 
@@ -166,46 +183,126 @@ function loadEndMenu(){
     for(i=0; i<items.length; i++)
         culoriPartideSortat[i]=items[i][2];
 
+    moreInfo.style.display = 'none';
     startMenu.style.display = 'none';
     container.style.display = 'none';
     result.style.display = 'flex';
     result.innerHTML =
         `
         <div class="resultrow">
-            <div class="partid1">
-                <h3>PSD</h3>
-                <p style="font-size:20px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div>
+                <h3>${(items[0][0])}</h3>
+                <p style="font-size:20px">${(descPartideScurte[items[0][0]])}</p>
                 <button class="butonpartid1">Descopera mai multe</button>
             </div>
             <div>
                 <canvas id="myChart" style="width:100%;"></canvas>
                 <button class="restart">Restart</button>
             </div>
-            <div class="partid2">
-                <h3>PNL</h3>
-                <p style="font-size:20px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div>
+                <h3>${(items[1][0])}</h3>
+                <p style="font-size:20px">${(descPartideScurte[items[1][0]])}</p>
                 <button class="butonpartid2">Descopera mai multe</button>
             </div>
-            <div class="partid3">
-                <h3>USR</h3>
-                <p style="font-size:20px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div>
+                <h3>${(items[2][0])}</h3>
+                <p style="font-size:20px">${(descPartideScurte[items[2][0]])}</p>
                 <button class="butonpartid3">Descopera mai multe</button>
             </div>
-            <div class="partid4">
-                <h3>AUR</h3>
-                <p style="font-size:20px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div>
+                <h3>${(items[3][0])}</h3>
+                <p style="font-size:20px">${(descPartideScurte[items[3][0]])}</p>
                 <button class="butonpartid4">Descopera mai multe</button>
             </div>
-            <div class="partid5">
-                <h3>UDMR</h3>
-                <p style="font-size:20px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div>
+                <h3>${(items[4][0])}</h3>
+                <p style="font-size:20px">${(descPartideScurte[items[4][0]])}</p>
                 <button class="butonpartid5">Descopera mai multe</button>
             </div>
         </div>
         `;
+
+    document.querySelector('.butonpartid1').addEventListener('click',butonPartid0);
+    document.querySelector('.butonpartid2').addEventListener('click',butonPartid1);
+    document.querySelector('.butonpartid3').addEventListener('click',butonPartid2);
+    document.querySelector('.butonpartid4').addEventListener('click',butonPartid3);
+    document.querySelector('.butonpartid5').addEventListener('click',butonPartid4);
+
     const restartButton = document.querySelector('.restart');
     restartButton.addEventListener('click',restartQuiz);
     makeGraph(numePartideSortat, valoriPartideSortat, culoriPartideSortat);
+}
+
+//100% exista o metoda mai buna de a face asta, dar nu am gasit-o
+function butonPartid0(){
+    partidSelectat=0;
+    moreInformation();
+}
+
+function butonPartid1(){
+    partidSelectat=1;
+    moreInformation();
+}
+
+function butonPartid2(){
+    partidSelectat=2;
+    moreInformation();
+}
+
+function butonPartid3(){
+    partidSelectat=3;
+    moreInformation();
+}
+
+function butonPartid4(){
+    partidSelectat=4;
+    moreInformation();
+}
+
+function moreInformation(){
+    console.log(partidSelectat);
+    moreInfo.style.display = 'flex';
+
+    var questionListDisplay = "";
+
+    console.log("Score: " + score.length + " " + totalQuestions.length);
+
+    for(var i=0; i<totalQuestions; i++){
+        if(score.length <= i)
+            break;
+        const question = questions[i];
+        var ok = 0;
+        var s = score[i].split(' ');
+        console.log("Hahahahi" + s);
+        for(j = 0; j < s.length; j++)
+        {
+            if(s[j]==items[partidSelectat][0].toLowerCase())
+            {
+                ok=1;
+                console.log("Hihihiha");
+            }
+        }
+        if(ok==1){
+            questionListDisplay += ("<p>" + (i+1) + ". " + question.question + " " + selectedAnswersData[i] + "</p>");
+        }
+    }
+
+    console.log(selectedAnswersData);
+
+    moreInfo.innerHTML =
+     `
+     <div class="title">${(items[partidSelectat][0])}</div>
+        <p>${(descPartideLungi[items[partidSelectat][0]])}</p>
+        <div class="intrebariNimerite">
+            <h3>Intrebarile unde ai fost de acord cu ${(items[partidSelectat][0])}:</h3>
+            ${questionListDisplay}
+        </div>
+        <button class="backToResult">Inapoi</button>
+     `;
+
+    result.style.display = 'none';
+    const backToResultButton = document.querySelector('.backToResult');
+    backToResultButton.addEventListener('click',loadEndMenu);
 }
 
 function makeGraph(numePartideSortat, valoriPartideSortat, culoriPartideSortat){
@@ -252,6 +349,7 @@ function makeGraph(numePartideSortat, valoriPartideSortat, culoriPartideSortat){
 }
 
 //startMenu.style.display = 'none';
+moreInfo.style.display = 'none';
 result.style.display = 'none';
 container.style.display = 'none';
 generateQuestions(currentQuestion);

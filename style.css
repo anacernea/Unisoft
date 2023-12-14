@@ -76,6 +76,7 @@ body {
   margin: 1rem;
 }
 button {
+  background: #3B413C;
   font-family: "Roboto", sans-serif;
   padding: 0.5rem 1.5rem;
   border: none;
@@ -110,19 +111,23 @@ button.endButton {
   margin-top: 75px;
   font-size: 20px;
 }
+button.backToResult {
+  background: #3B413C;
+  height: 75px;
+  width: 250px;
+  align-self: center;
+  margin-top: 75px;
+  font-size: 20px;
+}
 button.restart {
   background: #DAF0EE;
-  color: #3B413C;
   font-size: 2rem;
   margin-top: 2rem;
   transition: all 0.4s;
 }
-button.restart:hover {
-  color: #00000098;
-}
 button:hover,
 button:focus {
-  transform: scale(1);
+  transform: scale(1.05);
   font-weight: 500;
   box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
 }
@@ -204,5 +209,22 @@ canvas{
   font-size: 20px;
 }
 .resultrow div button{
-  color: black;
+  background: #3B413C;
+}
+.resultrow div p{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.moreInfo{
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px white;
+  border-radius: 5px;
+  padding: 3rem;
+  text-shadow: 0 1px #00000010;
+  width: 70%;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  background: #DAF0EE;
 }
