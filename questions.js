@@ -1,46 +1,83 @@
 const questions = [
   {
-    "question": "Este absurd sa fii mandru de tara in care te-ai nascut?",
+    "question": "Crezi ca Romania ar trebui sa aiba o economie mai liberala?",
+    "answer1": "Da",
+    "answer1Total": "pnl usr",
+    "answer2": "Nu",
+    "answer2Total": "psd",
+    "answer3": "Ma abtin",
+    "answer3Total": ""
+  },
+  {
+    "question": "Esti de acord cu promovarea intereselor minoritatilor etnice in politica romaneasca?",
     "answer1": "Da",
     "answer1Total": "udmr",
     "answer2": "Nu",
     "answer2Total": "aur",
-    "answer3": "Neutru",
-    "answer3Total": "usr psd pnl",
-    "answer4": "Ma abtin",
-    "answer4Total": ""
+    "answer3": "Ma abtin",
+    "answer3Total": ""
   },
   {
-    "question": "Avortul este o actiune imorala?",
+    "question": "Esti de acord cu promovarea valorilor conservatoare in societate?",
     "answer1": "Da",
-    "answer1Total": "aur",
+    "answer1Total": "aur pnl",
     "answer2": "Nu",
-    "answer2Total": "usr psd pnl",
-    "answer3": "Neutru",
-    "answer3Total": "udmr",
-    "answer4": "Ma abtin",
-    "answer4Total": ""
+    "answer2Total": "usr",
+    "answer3": "Ma abtin",
+    "answer3Total": ""
   },
   {
-    "question": "Sunt oamenii bogati taxati prea putin?",
+    "question": "Ar trebui ca statul sa fie mai implicat in economie?",
     "answer1": "Da",
-    "answer1Total": "psd usr",
+    "answer1Total": "psd",
+    "answer2": "Nu",
+    "answer2Total": "pnl usr",
+    "answer3": "Ma abtin",
+    "answer3Total": ""
+  },
+  {
+    "question": "Esti de acord cu unirea Romaniei si a Republicii Moldova?",
+    "answer1": "Da",
+    "answer1Total": "aur psd",
+    "answer2": "Nu",
+    "answer2Total": "",
+    "answer3": "Ma abtin",
+    "answer3Total": ""
+  },
+  {
+    "question": "Ar trebui schimbarea climei sa fie de o importanta primara pentru stat?",
+    "answer1": "Da",
+    "answer1Total": "udmr usr",
+    "answer2": "Nu",
+    "answer2Total": "pnl psd",
+    "answer3": "Ma abtin",
+    "answer3Total": ""
+  },
+  {
+    "question": "Esti de acord cu faptul ca Romania ar trebui sa aiba mai multe programe sociale pentru persoanele defavorizate?",
+    "answer1": "Da",
+    "answer1Total": "psd",
     "answer2": "Nu",
     "answer2Total": "pnl",
-    "answer3": "Neutru",
-    "answer3Total": "aur udmr",
-    "answer4": "Ma abtin",
-    "answer4Total": ""
+    "answer3": "Ma abtin",
+    "answer3Total": ""
   },
   {
-    "question": "Ar trebui ca persoanele homosexuale sa aiba dreptul la parteneriat civil?",
+    "question": "Sunteti de acord cu parteneriatul civil?",
     "answer1": "Da",
     "answer1Total": "usr",
     "answer2": "Nu",
-    "answer2Total": "pnl psd udmr aur",
-    "answer3": "Neutru",
-    "answer3Total": "",
-    "answer4": "Ma abtin",
-    "answer4Total": ""
-  }
+    "answer2Total": "psd aur",
+    "answer3": "Ma abtin",
+    "answer3Total": ""
+  },
+  {
+    "question": "Ar trebui ca renuntarea la carbune sa fie o prioritate pentru stat?",
+    "answer1": "Da",
+    "answer1Total": "",
+    "answer2": "Nu",
+    "answer2Total": "psd pnl udmr usr",
+    "answer3": "Ma abtin",
+    "answer3Total": ""
+  },
 ]

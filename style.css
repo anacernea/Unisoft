@@ -228,3 +228,8 @@ canvas{
   min-height: 70vh;
   background: #DAF0EE;
 }
+a{
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}

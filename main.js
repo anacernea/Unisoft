@@ -1,26 +1,33 @@
 var descPartideScurte = {};
-descPartideScurte["PSD"] = "PSD Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-descPartideScurte["PNL"] = "PNL Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-descPartideScurte["USR"] = "USR Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-descPartideScurte["UDMR"] = "UDMR Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-descPartideScurte["AUR"] = "AUR Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+descPartideScurte["PSD"] = 'Partidul Social Democrat este cel mai mare partid politic din Romania. Ideologia principala a partidului este social-democratia iar pozitia politica este de centru-stanga. PSD este condus in prezent de Marcel Ciolacu, secretarul general fiind Paul Stanescu. Din 2021, PSD se afla la guvernare alaturi de PNL in cadrul CNR (Coalitia Nationala pentru Romania).';
+descPartideScurte["PNL"] = "Partidul National Liberal este cel mai vechi partid politic din Romania, fiind infiintat pentru prima oara in 1875. Pozitia politica a partidului este de centru-dreapta, ideologia principala fiind liberalismul.Alaturi de PSD, face parte din CNR (Coalitia Nationala pentru Romania) si este la guvernare in cadrul acesteia din 2021. Presedintele PNL este Nicolae Ciuca iar secretarul general al partidului este Lucian Bode.";
+descPartideScurte["USR"] = "Uniunea Salvati Romania este al treilea cel mai mare partid politic in Parlamentul Romaniei. Ideologia principala a partidului este liberalismul, fiind un partid de centru-dreapta modern. USR sustine parteneriatul civil si a candidat in trecut pe o platforma anticoruptie. De asemenea, partidul sustine parcursul european al Republicii Moldova. Presedintele partidului este Catalin Drula.";
+descPartideScurte["UDMR"] = "Uniunea Democrata Maghiara din Romania este o organizatie politica din Romania fondata cu scopul de a reprezenta interesele comunitatii maghiare. A fost infiintata pe 25 decembrie 1989, ziua in care Nicolae Ceausescu a fost executat.Fiind membra PPE, pozitia politica a uniunii este de centru-dreapta. Organizatia lupta pentru autonomie teritoriala. A facut de asemena parte din CNR alaturi de PSD si PNL, coalitie din care nu mai face parte in prezent.";
+descPartideScurte["AUR"] = "Alianta pentru Unirea Romanilor este un partid politic fondat in 2019. Este un partid nationalist, conservator, pozitia lui politica fiind de dreapta (unii considera ca este de extrema dreapta). Unul dintre obiectivele principale ale partidului este unirea Romaniei cu Basarabia. Valorile partidului, asa cum sunt descrise pe site-ul lor, sunt familia, natiunea, credinta crestina si libertatea.  Liderul partidului este George Simion iar Cristian David este secretar general.";
 
 var descPartideLungi = {};
-descPartideLungi["PSD"] = "PSD Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-descPartideLungi["PNL"] = "PNL Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-descPartideLungi["USR"] = "USR Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-descPartideLungi["UDMR"] = "UDMR Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-descPartideLungi["AUR"] = "AUR Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+descPartideLungi["PSD"] = 'Partidul Social Democrat este cel mai mare partid politic din Romania. Ideologia principala a partidului este social-democratia iar pozitia politica este de centru-stanga. PSD este condus in prezent de Marcel Ciolacu, secretarul general fiind Paul Stanescu. Din 2021, PSD se afla la guvernare alaturi de PNL in cadrul CNR (Coalitia Nationala pentru Romania). Pentru mai multe informatii, puteti accesa linkurile urmatoare:</p><p><a href="https://ro.wikipedia.org/wiki/Partidul_Social_Democrat_(România)" target="_blank">Partidul Social Democrat</a></p><p><a href="https://ro.wikipedia.org/wiki/Social-democrație" target="_blank">Democratie sociala</a></p><p><a href="https://ro.wikipedia.org/wiki/Coaliția_Națională_pentru_România" target="_blank">Coalitia Nationala pentru Romania</a></p><p><a href="https://www.psd.ro" target="_blank">PSD</a>';
+descPartideLungi["PNL"] = 'Partidul National Liberal este cel mai vechi partid politic din Romania, fiind infiintat pentru prima oara in 1875. Pozitia politica a partidului este de centru-dreapta, ideologia principala fiind liberalismul.Alaturi de PSD, face parte din CNR (Coalitia Nationala pentru Romania) si este la guvernare in cadrul acesteia din 2021. Presedintele PNL este Nicolae Ciuca iar secretarul general al partidului este Lucian Bode. Pentru mai multe informatii, puteti accesa linkurile urmatoare:</p><p><a href="https://ro.wikipedia.org/wiki/Partidul_Național_Liberal_(România)" target="_blank">Partidul National Liberal</a></p><p><a href="https://ro.wikipedia.org/wiki/Liberalism" target="_blank">Liberalism</a></p><p><a href="https://ro.wikipedia.org/wiki/Coaliția_Națională_pentru_România" target="_blank">Coalitia Nationala pentru Romania</a></p><p><a href="https://ro.wikipedia.org/wiki/Liberalismul_românesc" target="_blank">Liberalismul romanesc</a></p><p><a href="https://pnl.ro" target="_blank">PNL</a>';
+descPartideLungi["USR"] = 'Uniunea Salvati Romania este al treilea cel mai mare partid politic in Parlamentul Romaniei. Ideologia principala a partidului este liberalismul, fiind un partid de centru-dreapta modern. USR sustine parteneriatul civil si a candidat in trecut pe o platforma anticoruptie. De asemenea, partidul sustine parcursul european al Republicii Moldova. Presedintele partidului este Catalin Drula. Pentru mai multe informatii, puteti accesa linkurile urmatoare:</p><p><a href="https://ro.wikipedia.org/wiki/Uniunea_Salvați_România#Republica_Moldova" target="_blank">Uniunea Salvati Romania</a></p><p><a href="https://ro.wikipedia.org/wiki/Liberalism" target="_blank">Liberalism</a></p><p><a href="https://ro.wikipedia.org/wiki/Europenism" target="_blank">Europenism</a></p><p><a href="https://usr.ro" target="_blank">USR</a>';
+descPartideLungi["UDMR"] = 'Uniunea Democrata Maghiara din Romania este o organizatie politica din Romania fondata cu scopul de a reprezenta interesele comunitatii maghiare. A fost infiintata pe 25 decembrie 1989, ziua in care Nicolae Ceausescu a fost executat.Fiind membra PPE (Partidul Popular European), pozitia politica a uniunii este de centru-dreapta. Organizatia lupta pentru autonomie teritoriala. A facut de asemena parte din CNR (Coalitia Nationala pentru Romania) alaturi de PSD si PNL, coalitie din care nu mai face parte in prezent. Pentru mai multe informatii, puteti accesa linkurile urmatoare:</p><p><a href="https://ro.wikipedia.org/wiki/Uniunea_Democrată_Maghiară_din_România " target="_blank">Uniunea Democrata Maghiara din Romania</a></p><p><a href="https://ro.wikipedia.org/wiki/Partidul_Popular_European" target="_blank">Partidul Popular European</a></p><p><a href="http://udmr.ro" target="_blank">UDMR</a>';
+descPartideLungi["AUR"] = 'Alianta pentru Unirea Romanilor este un partid politic fondat in 2019. Este un partid nationalist, conservator, pozitia lui politica fiind de dreapta (unii considera ca este de extrema dreapta). Unul dintre obiectivele principale ale partidului este unirea Romaniei cu Basarabia. Valorile partidului, asa cum sunt descrise pe site-ul lor, sunt familia, natiunea, credinta crestina si libertatea.  Liderul partidului este George Simion iar Cristian David este secretar general. Pentru mai multe informatii, puteti accesa linkurile urmatoare:</p><p><a href="https://ro.wikipedia.org/wiki/Alianța_pentru_Unirea_Românilor" target="_blank">Alianta pentru Unirea Romanilor</a></p><p><a href="https://ro.wikipedia.org/wiki/Naționalism_românesc" target="_blank">Nationalism romanesc</a></p><p><a href="https://ro.wikipedia.org/wiki/Unirea_Republicii_Moldova_cu_România" target="_blank">Unirea Republicii Moldova cu Romania</a></p><p><a href="https://partidulaur.ro" target="_blank">Partidul AUR</a>';
 
 
 var partidSelectat = 0;
 var items;
 
-const maxPsd = 4;
+const maxPsd = 7;
 const maxAur = 4;
-const maxPnl = 4;
-const maxUsr = 4;
-const maxUdmr = 4;
+const maxPnl = 6;
+const maxUsr = 6;
+const maxUdmr = 3;
+
+var maxDic = {};
+maxDic["PSD"]=maxPsd;
+maxDic["PNL"]=maxPnl;
+maxDic["USR"]=maxUsr;
+maxDic["AUR"]=maxAur;
+maxDic["UDMR"]=maxUdmr;
 
 var dict = {};
 
@@ -36,9 +43,8 @@ const questionEl = document.querySelector('.question');
 const option1 = document.querySelector('.option1');
 const option2 = document.querySelector('.option2');
 const option3 = document.querySelector('.option3');
-const option4 = document.querySelector('.option4');
 const nextButton = document.querySelector('.next');
-const endButton = document.querySelector('.endButton');
+//const endButton = document.querySelector('.endButton');
 const startButton = document.querySelector('.startButton');
 const result = document.querySelector('.result');
 const moreInfo = document.querySelector('.moreInfo');
@@ -50,17 +56,15 @@ function generateQuestions (index) {
     const option1Total = questions[index].answer1Total;
     const option2Total = questions[index].answer2Total;
     const option3Total = questions[index].answer3Total;
-    const option4Total = questions[index].answer4Total;
+
     //Populate html elements 
     questionEl.innerHTML = `${index + 1}. ${question.question}`
     option1.setAttribute('data-total', `${option1Total}`);
     option2.setAttribute('data-total', `${option2Total}`);
     option3.setAttribute('data-total', `${option3Total}`);
-    option4.setAttribute('data-total', `${option4Total}`);
     option1.innerHTML = `${question.answer1}`
     option2.innerHTML = `${question.answer2}`
     option3.innerHTML = `${question.answer3}`
-    option4.innerHTML = `${question.answer4}`
 }
 
 
@@ -267,6 +271,8 @@ function moreInformation(){
 
     console.log("Score: " + score.length + " " + totalQuestions.length);
 
+    var count=0;
+
     for(var i=0; i<totalQuestions; i++){
         if(score.length <= i)
             break;
@@ -283,6 +289,7 @@ function moreInformation(){
             }
         }
         if(ok==1){
+            count++;
             questionListDisplay += ("<p>" + (i+1) + ". " + question.question + " " + selectedAnswersData[i] + "</p>");
         }
     }
@@ -294,7 +301,7 @@ function moreInformation(){
      <div class="title">${(items[partidSelectat][0])}</div>
         <p>${(descPartideLungi[items[partidSelectat][0]])}</p>
         <div class="intrebariNimerite">
-            <h3>Intrebarile unde ai fost de acord cu ${(items[partidSelectat][0])}:</h3>
+            <h3>Intrebarile unde ai fost de acord cu ${(items[partidSelectat][0])} (${count}/${maxDic[items[partidSelectat][0]]}):</h3>
             ${questionListDisplay}
         </div>
         <button class="backToResult">Inapoi</button>
@@ -354,6 +361,5 @@ result.style.display = 'none';
 container.style.display = 'none';
 generateQuestions(currentQuestion);
 nextButton.addEventListener('click', loadNextQuestion);
-endButton.addEventListener('click', loadEndMenu);
+//endButton.addEventListener('click', loadEndMenu);
 startButton.addEventListener('click', startQuiz);
-
