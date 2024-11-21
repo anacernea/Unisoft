@@ -1,6 +1,6 @@
 # EuCuCineVotez - Romanian Voter Guidance Website
 
-**EuCuCineVotez** is a web tool that helps Romanian voters make informed decisions by matching their values and preferences with those of political parties. We created this tool with the upcoming election year in mind, aiming to support citizens in navigating the political landscape and aligning with parties that best represent their views.
+**EuCuCineVotez** is a web tool that helps Romanian voters make informed decisions by matching their values and preferences with those of political parties. This tool was created with the upcoming election year in mind, aiming to support citizens in navigating the political landscape and aligning with parties that best represent their views.
 
 This project was developed by four first-year students from the **Faculty of Mathematics and Informatics** and the **Faculty of Journalism** at the **University of Bucharest** as part of the **HackTheNews Hackathon** in December 2023. The hackathon aimed to support journalistic innovation through new tools that make information accessible and useful to the public.
 
